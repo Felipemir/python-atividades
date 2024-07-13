@@ -72,11 +72,10 @@ valor_total = quantidade_camisetas * preco_unitario * (1 - desconto)
 valor_frete = frete()
 
 if valor_frete > 0:
-    valor_total_com_frete = valor_total + valor_freted
+    valor_total_com_frete = valor_total + valor_frete
 else:
     valor_total_com_frete = valor_total
 
-print(f"Modelo escolhido: {modelo_escolhido}")
 print(f"Quantidade de camisetas: {quantidade_camisetas}")
 print(f"Preço unitário: R${preco_unitario:.2f}")
 print(f"Desconto aplicado: {desconto * 100}%")
